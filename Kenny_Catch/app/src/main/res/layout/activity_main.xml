@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="53dp"
+        android:text="Time : "
+        android:textAlignment="textStart"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="102dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="15dp"
+        android:text="Score : "
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="412dp"
+        android:layout_height="441dp"
+        android:layout_marginTop="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewScore">
+
+        <ImageView
+            android:id="@+id/imageView02"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="104dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toTopOf="@+id/imageView06"
+            app:layout_constraintEnd_toStartOf="@+id/imageView03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView03"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="208dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toTopOf="@+id/imageView07"
+            app:layout_constraintEnd_toStartOf="@+id/imageView04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView04"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="312dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toTopOf="@+id/imageView08"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView01"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toTopOf="@+id/imageView05"
+            app:layout_constraintEnd_toStartOf="@+id/imageView02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView05"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="147dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toTopOf="@+id/imageView09"
+            app:layout_constraintEnd_toStartOf="@+id/imageView06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView06"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toTopOf="@+id/imageView10"
+            app:layout_constraintEnd_toStartOf="@+id/imageView07"
+            app:layout_constraintStart_toEndOf="@+id/imageView05"
+            app:layout_constraintTop_toBottomOf="@+id/imageView02"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView07"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="208dp"
+            android:layout_marginTop="147dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toTopOf="@+id/imageView11"
+            app:layout_constraintEnd_toStartOf="@+id/imageView08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView08"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="312dp"
+            android:layout_marginTop="147dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toTopOf="@+id/imageView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView09"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="294dp"
+            android:layout_marginEnd="3dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="294dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="208dp"
+            android:layout_marginTop="294dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="312dp"
+            android:layout_marginTop="294dp"
+            android:onClick="scoreArttir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kenny" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
